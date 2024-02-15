@@ -35,7 +35,7 @@ float overal(int course_num, Courses* course_grades) {
         total += ((course_grades + i)->grade) * (course_grades + i)->course_AKTS;
         total_AKTS += (course_grades + i)->course_AKTS;
     }
-    return total / total_AKTS;
+    return (float)total / total_AKTS;
 }
 
 void inputs(Courses* courses, int course_number) {
